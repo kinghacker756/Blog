@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful Blog | Simple Thoughts</title>
+    <style>
+        /* Modern CSS with minimal design */
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --text: #333;
+            --text-light: #666;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .post-content {
+            padding: 1.5rem;
+        }
+        
+        .post-content h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .post-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .post-excerpt {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .read-more {
+            display: inline-block;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Mindful</a>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Articles</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Simple Thoughts, Clear Mind</h1>
+            <p>Welcome to my personal blog where I share thoughts on minimalism, mindfulness, and simple living.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Blog Posts Grid -->
+        <div class="blog-posts">
+            <!-- Post 1 -->
+            <article class="post-card">
+                <img src="https://source.unsplash.com/random/600x400/?minimalism" alt="Minimalism" class="post-image">
+                <div class="post-content">
+                    <h3>The Art of Letting Go</h3>
+                    <div class="post-meta">May 15, 2024 • 5 min read</div>
+                    <p class="post-excerpt">How embracing minimalism helped me find freedom in owning less and living more intentionally.</p>
+                    <a href="#" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            <!-- Post 2 -->
+            <article class="post-card">
+                <img src="https://source.unsplash.com/random/600x400/?mindfulness" alt="Mindfulness" class="post-image">
+                <div class="post-content">
+                    <h3>Morning Rituals for Clarity</h3>
+                    <div class="post-meta">April 28, 2024 • 4 min read</div>
+                    <p class="post-excerpt">Simple practices to start your day with intention and focus in our distracted world.</p>
+                    <a href="#" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+
+            <!-- Post 3 -->
+            <article class="post-card">
+                <img src="https://source.unsplash.com/random/600x400/?simpleliving" alt="Simple Living" class="post-image">
+                <div class="post-content">
+                    <h3>Digital Minimalism Guide</h3>
+                    <div class="post-meta">April 10, 2024 • 7 min read</div>
+                    <p class="post-excerpt">Practical steps to reduce digital clutter and reclaim your attention in the age of information overload.</p>
+                    <a href="#" class="read-more">Continue Reading</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Mindful Blog</h3>
+                <p>Simple thoughts on living with intention in a complex world.</p>
+                <p>&copy; 2024 Mindful Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
