@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog | Thoughts & Ideas</title>
+    <style>
+        /* Modern Minimal CSS */
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #166088;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background: #f5f5f5;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .nav-links a {
+            margin-left: 1.5rem;
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .post-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .post-content {
+            padding: 1.5rem;
+        }
+        
+        /* Sidebar with Ad */
+        .sidebar {
+            margin-top: 2rem;
+        }
+        
+        .ad-container {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (min-width: 768px) {
+            .main-content {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 2rem;
+            }
+            
+            .sidebar {
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">SimpleBlog</a>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Articles</a>
+                    <a href="#">About</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Thoughts & Ideas</h1>
+            <p>A simple blog about life, technology, and everything in between</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            <!-- Post 1 -->
+            <article class="post-card">
+                <img src="https://source.unsplash.com/random/800x400/?writing" alt="Writing" class="post-image">
+                <div class="post-content">
+                    <h2>The Power of Simple Writing</h2>
+                    <p>How clear communication can change the way we share ideas in the digital age...</p>
+                    <a href="#">Read more →</a>
+                </div>
+            </article>
+            
+            <!-- Post 2 -->
+            <article class="post-card">
+                <img src="https://source.unsplash.com/random/800x400/?technology" alt="Tech" class="post-image">
+                <div class="post-content">
+                    <h2>Minimalism in Tech</h2>
+                    <p>Why less features sometimes means better user experience and happier customers...</p>
+                    <a href="#">Read more →</a>
+                </div>
+            </article>
+        </div>
+        
+        <!-- Sidebar with Ad -->
+        <aside class="sidebar">
+            <div class="ad-container">
+                <!-- Adsterra Ad -->
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '2965bf65172abb844cecdbd80e6af5a0',
+                        'format' : 'iframe',
+                        'height' : 600,
+                        'width' : 160,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformanceformat.com/2965bf65172abb844cecdbd80e6af5a0/invoke.js"></script>
+            </div>
+            
+            <div class="about-widget">
+                <h3>About Me</h3>
+                <p>Writer, thinker, and occasional coder sharing thoughts on simplicity in a complex world.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SimpleBlog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
